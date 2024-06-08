@@ -9,12 +9,12 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <div className="min-h-screen flex flex-col items-start">
-        <header>
+      <div className="min-h-screen flex flex-col items-center bg-body-bg-color text-text-color">
+        <header className="w-full">
           <NavbarHeader />
         </header>
 
-        <main>
+        <main className="flex flex-col max-w-[25rem]">
           <Home />
           <About />
           <Skills />

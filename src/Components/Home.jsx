@@ -1,17 +1,25 @@
 import React from "react";
+import * as Seperator from "@radix-ui/react-separator";
 
 const Home = () => {
   return (
-    <div>
-      <h1>
-        Hi, I am <span>Mazen</span>. a frontend web developer based in Egypt
+    <div className="flex flex-col p-6 mb-6">
+      <h1 className="font-bold text-4xl my-1">
+        Hi, I am <span className="text-6xl">Mazen</span>
       </h1>
+      <p className="text-lg opacity-60 my-1"> a frontend web developer</p>
 
-      <ul>
+      <Seperator.Root
+        className="bg-secondary-color data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full my-4"
+        decorative
+        orientation="horizontal"
+      />
+
+      <ul className="flex items-center gap-4 ">
         <li>
-          <a href="#">
+          <a href="https://github.com/Mazz100">
             <svg
-              className="w-6 h-6 text-gray-800"
+              className="w-6 h-6"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -27,11 +35,12 @@ const Home = () => {
             </svg>
           </a>
         </li>
+
         <li>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/mazen-hassan-3429a7225/">
             <svg
-              className="w-6 h-6 text-gray-800"
-              aria-hidden="true"
+              className="w-6 h-6 hover:fill-blue-600"
+              ariahidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -48,9 +57,47 @@ const Home = () => {
           </a>
         </li>
         <li>
-          <a href="#">FrontendMentor</a>
+          <a href="https://www.frontendmentor.io/profile/Mazz100">
+            <svg
+              className=""
+              width="25"
+              height="25"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fillRule="nonzero" fill="none"></g>
+              <g fill="#1C2122">
+                <path
+                  d="M24.762 12.167a.756.756 0 0 1-.307-.065l-6.438-2.883a.751.751 0 0 1 0-1.37l6.438-2.873a.752.752 0 0 1 .991.379.752.752 0 0 1-.38.991l-4.905 2.189 4.906 2.197a.75.75 0 0 1-.305 1.435z"
+                  fill="#67BECE"
+                />
+                <path
+                  d="M15.988 22.626c-7.078 0-13.266-4.778-15.045-11.62a.749.749 0 1 1 1.451-.378 14.044 14.044 0 0 0 13.594 10.498.75.75 0 0 1 0 1.5z"
+                  fill="#3F54A3"
+                />
+                <path
+                  d="M13.404 16.398a.75.75 0 0 1-.75-.75V1.391a.75.75 0 0 1 1.5 0v14.257a.75.75 0 0 1-.75.75z"
+                  fill="#67BECE"
+                />
+              </g>
+            </svg>
+          </a>
         </li>
       </ul>
+
+      <div className="inline-flex items-center gap-4">
+        <a
+          href="#"
+          className="self-start my-6 bg-interactive-states-bg p-2 px-4 rounded-md"
+        >
+          Get Resume
+        </a>
+        <a
+          href="#"
+          className="self-start my-6 ring-1 ring-states-color p-2 px-4 rounded-md"
+        >
+          See Projects
+        </a>
+      </div>
     </div>
   );
 };

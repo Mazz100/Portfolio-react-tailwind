@@ -11,27 +11,22 @@ const Skills = () => {
   const skills = [
     {
       icon: htmlIcon,
-      alt: "HTML",
       name: "HTML",
     },
     {
       icon: cssIcon,
-      alt: "CSS",
       name: "CSS",
     },
     {
       icon: sassIcon,
-      alt: "Sass",
       name: "Sass",
     },
     {
       icon: tailwindIcon,
-      alt: "Tailwind CSS",
       name: "Tailwind CSS",
     },
     {
       icon: jsIcon,
-      alt: "JavaScript",
       name: "JavaScript",
     },
     {
@@ -41,19 +36,21 @@ const Skills = () => {
     },
     {
       icon: reactJsIcon,
-      alt: "React JS",
       name: "React JS",
     },
   ];
 
   return (
-    <div>
-      <h2>Tech Skills</h2>
-      <ul>
-        {skills.map((skill, idx) => (
-          <li key={skill.name}>
-            <img src={skill.icon} alt={skill.alt} />
-            <span>{skill.name}</span>
+    <div className="flex flex-col items-center mb-6">
+      <h2 className="text-4xl my-6">Tech Skills</h2>
+      <ul className="flex flex-col items-center">
+        {skills.map((skill) => (
+          <li
+            key={skill.name}
+            className="flex flex-col bg-secondary-color p-4 rounded-md mb-6 last-of-type:mb-0 w-3/4"
+          >
+            <img src={skill.icon} alt={`${skill.name} icon`} />
+            <span className="self-center text-lg my-3">{skill.name}</span>
           </li>
         ))}
       </ul>

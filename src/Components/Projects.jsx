@@ -41,7 +41,7 @@ const Projects = () => {
         react: "React.js",
         reactRouter: "React Router",
         radixUi: "Radix UI",
-        tailwind: "Tailwind CSS",
+        tailwind: "Tailwind",
         html: "HTML5",
       },
     },
@@ -52,34 +52,44 @@ const Projects = () => {
       description: `This landing page project by Frontend Mentor, showcases my use of both flex and grid layouts to achieve a well-structured design. 
       I ensured proper HTML tag usage for each piece of content, eliminating excessive tags and maintaining clean, semantic markup.`,
       techUsed: {
-        react: "React.js",
-        tailwind: "Tailwind CSS",
+        tailwind: "Tailwind",
         html: "HTML5",
       },
     },
   ];
 
   return (
-    <div>
-      <h2>Projects</h2>
+    <div className="flex flex-col items-center p-6">
+      <h2 className="text-4xl my-6">Projects</h2>
 
-      {projects.map((project, idx) => (
-        <div key={idx} className="max-w-[36rem]">
+      {projects.map((project) => (
+        <div
+          key={project.name}
+          className="flex flex-col items-center bg-secondary-color mb-8 rounded-lg overflow-hidden"
+        >
           <img src={project.screenshot} alt={`${project.name} screenshot`} />
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
 
-          <ul>
-            {Object.entries(project.techUsed).map(([key, value]) => (
-              <li key={key}>{value}</li>
-            ))}
-          </ul>
+          <div className="p-6 ">
+            <h3 className="text-lg text-center my-4">{project.name}</h3>
+            <p className="mb-4 opacity-70">{project.description}</p>
+
+            <ul className="flex flex-wrap items-center gap-4 text-sm">
+              {Object.entries(project.techUsed).map(([key, value]) => (
+                <li key={key} className="bg-body-bg-color p-2 rounded-md">
+                  {value}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       ))}
 
-      <div>
-        <a href="#">More on GitHub</a>
-      </div>
+      <a
+        href="#"
+        className="underline underline-offset-8 hover:text-states-color p-3 rounded-md"
+      >
+        More on GitHub
+      </a>
     </div>
   );
 };
