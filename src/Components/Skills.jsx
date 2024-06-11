@@ -6,6 +6,8 @@ import tailwindIcon from "../assets/tailwind-css.svg";
 import jsIcon from "../assets/javascript-js.svg";
 import nodeJsIcon from "../assets/node-js.svg";
 import reactJsIcon from "../assets/reactjs.svg";
+import radixIcon from "../assets/brand-radix-ui.svg";
+import reactRouterIcon from "../assets/react-router.svg";
 
 const Skills = () => {
   const skills = [
@@ -38,19 +40,31 @@ const Skills = () => {
       icon: reactJsIcon,
       name: "React JS",
     },
+    {
+      icon: reactRouterIcon,
+      name: "React Router",
+    },
+    {
+      icon: radixIcon,
+      name: "Radix UI",
+    },
   ];
 
   return (
-    <div className="flex flex-col items-center mb-6">
-      <h2 className="text-4xl my-6">Tech Skills</h2>
-      <ul className="flex flex-col items-center">
+    <div className="flex flex-col items-center p-12">
+      <h2 className="mb-10 text-4xl">Tech Skills</h2>
+      <ul className="flex flex-col items-center gap-8 desktop:grid desktop:grid-cols-4 desktop:place-items-start tablet:grid tablet:auto-rows-auto tablet:grid-cols-2 tablet:place-content-center tablet:gap-4">
         {skills.map((skill) => (
           <li
             key={skill.name}
-            className="flex flex-col bg-secondary-color p-4 rounded-md mb-6 last-of-type:mb-0 w-3/4"
+            className="flex h-full w-full flex-col items-center rounded-md bg-secondary-color p-10 text-center"
           >
-            <img src={skill.icon} alt={`${skill.name} icon`} />
-            <span className="self-center text-lg my-3">{skill.name}</span>
+            <img
+              className="h-full w-full"
+              src={skill.icon}
+              alt={`${skill.name} icon`}
+            />
+            <span className="my-3 text-lg">{skill.name}</span>
           </li>
         ))}
       </ul>

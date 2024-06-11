@@ -3,23 +3,23 @@ import * as Seperator from "@radix-ui/react-separator";
 
 const Home = () => {
   return (
-    <div className="flex flex-col p-6 mb-6">
-      <h1 className="font-bold text-4xl my-1">
-        Hi, I am <span className="text-6xl">Mazen</span>
-      </h1>
-      <p className="text-lg opacity-60 my-1"> a frontend web developer</p>
+    <div className="flex flex-col p-12">
+      <h1 className="my-1 text-4xl">Hello, I'm</h1>
+
+      <span className="text-7xl font-bold">Mazen</span>
+
+      <p className="my-1 text-lg opacity-60"> a frontend web developer</p>
 
       <Seperator.Root
-        className="bg-secondary-color data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full my-4"
-        decorative
+        className="my-4 bg-secondary-color data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full"
         orientation="horizontal"
       />
 
-      <ul className="flex items-center gap-4 ">
+      <ul className="flex items-center gap-4">
         <li>
           <a href="https://github.com/Mazz100">
             <svg
-              className="w-6 h-6"
+              className="h-6 w-6"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -39,7 +39,7 @@ const Home = () => {
         <li>
           <a href="https://www.linkedin.com/in/mazen-hassan-3429a7225/">
             <svg
-              className="w-6 h-6 hover:fill-blue-600"
+              className="hover:fill-blue-600 h-6 w-6"
               ariahidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -87,13 +87,13 @@ const Home = () => {
       <div className="inline-flex items-center gap-4">
         <a
           href="#"
-          className="self-start my-6 bg-interactive-states-bg p-2 px-4 rounded-md"
+          className="my-6 self-start rounded-md bg-interactive-states-bg p-2 px-4 transition-colors hover:bg-interactive-hover"
         >
           Get Resume
         </a>
         <a
           href="#"
-          className="self-start my-6 ring-1 ring-states-color p-2 px-4 rounded-md"
+          className="my-6 self-start rounded-md border-[1px] border-states-color p-2 px-4 transition-colors hover:border-interactive-hover"
         >
           See Projects
         </a>

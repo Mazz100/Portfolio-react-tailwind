@@ -9,19 +9,19 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <div className="min-h-screen flex flex-col items-center bg-body-bg-color text-text-color">
+      <div className="flex min-h-screen flex-col items-center bg-body-bg-color text-text-color">
         <header className="w-full">
           <NavbarHeader />
         </header>
 
-        <main className="flex flex-col max-w-[25rem]">
+        <main className="flex max-w-[25rem] flex-col desktop:max-w-[80rem] tablet:max-w-[32rem]">
           <Home />
           <About />
           <Skills />
           <Projects />
         </main>
 
-        <footer>
+        <footer className="w-full">
           <Footer />
         </footer>
       </div>
