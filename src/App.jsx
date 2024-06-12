@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavbarHeader from "./Components/NavbarHeader";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -9,8 +9,8 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center bg-body-bg-color text-text-color">
-        <header className="w-full">
+      <div className="font-Inter-font-family flex min-h-screen flex-col items-center bg-body-bg-color text-text-color">
+        <header className="sticky top-0 z-10 w-full">
           <NavbarHeader />
         </header>
 

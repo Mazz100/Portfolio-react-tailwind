@@ -4,32 +4,30 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 const NavbarHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flex items-center justify-between bg-secondary-color p-4">
-      <p>
-        <a href="#">M.H</a>
-      </p>
+    <div className="flex items-center justify-between bg-secondary-color p-2">
+      <p className="mx-4 text-2xl text-states-color">Mazen Hassan</p>
 
-      <nav className="hidden desktop:flex desktop:items-center desktop:gap-10">
+      <nav className="mx-4 hidden p-2 desktop:flex desktop:items-center desktop:gap-10">
         <a
-          href="#"
+          href="#Home"
           className="rounded-md transition-colors hover:text-states-color"
         >
           Home
         </a>
         <a
-          href="#"
+          href="#About"
           className="rounded-md transition-colors hover:text-states-color"
         >
           About
         </a>
         <a
-          href="#"
+          href="#Skills"
           className="rounded-md transition-colors hover:text-states-color"
         >
           Skills
         </a>
         <a
-          href="#"
+          href="#Projects"
           className="rounded-md transition-colors hover:text-states-color"
         >
           Projects
@@ -95,22 +93,34 @@ const NavbarHeader = () => {
         </DropdownMenu.Trigger>
         <DropdownMenu.Portal>
           <DropdownMenu.Content
-            sideOffset={15}
+            sideOffset={5}
             sticky="always"
             loop={true}
-            className="flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color text-4xl text-text-color transition-opacity data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn landscape:text-2xl"
+            className="flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-4xl text-text-color transition-opacity data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn landscape:flex-row landscape:justify-between landscape:text-lg"
           >
-            <DropdownMenu.Item className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color">
-              <a href="#">Home</a>
+            <DropdownMenu.Item
+              className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"
+              onSelect={(e) => e.preventDefault()}
+            >
+              <a href="#Home">Home</a>
             </DropdownMenu.Item>
-            <DropdownMenu.Item className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color">
-              <a href="#">About</a>
+            <DropdownMenu.Item
+              className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"
+              onSelect={(e) => e.preventDefault()}
+            >
+              <a href="#About">About</a>
             </DropdownMenu.Item>
-            <DropdownMenu.Item className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color">
-              <a href="#">Skills</a>
+            <DropdownMenu.Item
+              className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"
+              onSelect={(e) => e.preventDefault()}
+            >
+              <a href="#Skills">Skills</a>
             </DropdownMenu.Item>
-            <DropdownMenu.Item className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color">
-              <a href="#">Projects</a>
+            <DropdownMenu.Item
+              className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"
+              onSelect={(e) => e.preventDefault()}
+            >
+              <a href="#Projects">Projects</a>
             </DropdownMenu.Item>
           </DropdownMenu.Content>
         </DropdownMenu.Portal>

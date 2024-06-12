@@ -52,7 +52,9 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col items-center p-12">
-      <h2 className="mb-10 text-4xl">Tech Skills</h2>
+      <h2 className="mb-10 text-4xl" id="Skills">
+        Tech Skills
+      </h2>
       <ul className="flex flex-col items-center gap-8 desktop:grid desktop:grid-cols-4 desktop:place-items-start tablet:grid tablet:auto-rows-auto tablet:grid-cols-2 tablet:place-content-center tablet:gap-4">
         {skills.map((skill) => (
           <li
@@ -64,7 +66,7 @@ const Skills = () => {
               src={skill.icon}
               alt={`${skill.name} icon`}
             />
-            <span className="my-3 text-lg">{skill.name}</span>
+            <span className="my-3 text-2xl">{skill.name}</span>
           </li>
         ))}
       </ul>

@@ -12,7 +12,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-4">
             <li>
               <a
-                href="#"
+                href="#Home"
                 className="underline underline-offset-4 transition-colors hover:text-states-color"
               >
                 Home
@@ -20,7 +20,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#About"
                 className="underline underline-offset-4 transition-colors hover:text-states-color"
               >
                 About
@@ -28,7 +28,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#Skills"
                 className="underline underline-offset-4 transition-colors hover:text-states-color"
               >
                 Skills
@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#Projects"
                 className="underline underline-offset-4 transition-colors hover:text-states-color"
               >
                 Projects
@@ -51,7 +51,7 @@ const Footer = () => {
             <li>
               <a href="https://github.com/Mazz100">
                 <svg
-                  className="h-6 w-6"
+                  className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -71,7 +71,7 @@ const Footer = () => {
             <li>
               <a href="https://www.linkedin.com/in/mazen-hassan-3429a7225/">
                 <svg
-                  className="hover:fill-blue-600 h-6 w-6"
+                  className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
                   ariahidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -91,7 +91,7 @@ const Footer = () => {
             <li>
               <a href="https://www.frontendmentor.io/profile/Mazz100">
                 <svg
-                  className=""
+                  className="h-6 w-6"
                   width="25"
                   height="25"
                   xmlns="http://www.w3.org/2000/svg"

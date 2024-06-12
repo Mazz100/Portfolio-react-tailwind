@@ -72,11 +72,13 @@ const Projects = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center p-12">
-        <h2 className="mb-10 text-center text-4xl">Projects</h2>
+        <h2 className="mb-10 text-center text-4xl" id="Projects">
+          Projects
+        </h2>
         {projects.map((project) => (
           <div
             key={project.name}
-            className="mb-8 flex flex-col items-center overflow-hidden rounded-lg bg-secondary-color desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 desktop:gap-8"
+            className="mb-10 flex flex-col items-center overflow-hidden rounded-lg bg-secondary-color desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 desktop:gap-8"
           >
             <img
               className="h-full object-cover"

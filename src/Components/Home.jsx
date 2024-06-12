@@ -3,7 +3,7 @@ import * as Seperator from "@radix-ui/react-separator";
 
 const Home = () => {
   return (
-    <div className="flex flex-col p-12">
+    <div className="flex flex-col p-12" id="Home">
       <h1 className="my-1 text-4xl">Hello, I'm</h1>
 
       <span className="text-7xl font-bold">Mazen</span>
@@ -15,11 +15,11 @@ const Home = () => {
         orientation="horizontal"
       />
 
-      <ul className="flex items-center gap-4">
+      <ul className="flex items-center gap-4 p-2">
         <li>
           <a href="https://github.com/Mazz100">
             <svg
-              className="h-6 w-6"
+              className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -39,7 +39,7 @@ const Home = () => {
         <li>
           <a href="https://www.linkedin.com/in/mazen-hassan-3429a7225/">
             <svg
-              className="hover:fill-blue-600 h-6 w-6"
+              className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
               ariahidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -59,7 +59,7 @@ const Home = () => {
         <li>
           <a href="https://www.frontendmentor.io/profile/Mazz100">
             <svg
-              className=""
+              className="h-6 w-6"
               width="25"
               height="25"
               xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ const Home = () => {
 
       <div className="inline-flex items-center gap-4">
         <a
-          href="#"
+          href="https://www.dropbox.com/scl/fi/czw4zjvsq1ix8evdx4a2x/Mazen-Hassan-Resume.pdf?rlkey=nbwnvn9v97h8ulwlpgv9hhw4v&st=ret4r66j&dl=0"
           className="my-6 self-start rounded-md bg-interactive-states-bg p-2 px-4 transition-colors hover:bg-interactive-hover"
         >
           Get Resume

@@ -16,6 +16,10 @@ export default {
       "interactive-hover": "#B46000",
     },
 
+    fontFamily: {
+      "Inter-font-family": ["Inter", "sans-serif"],
+    },
+
     screens: {
       desktop: "80rem",
       tablet: { min: "48rem", max: "80rem" },

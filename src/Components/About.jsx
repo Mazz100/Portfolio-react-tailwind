@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-6 p-12">
+    <div className="flex flex-col gap-6 p-12" id="About">
       <h2 className="my-6 text-center text-4xl">About Me</h2>
       <p className="opacity-70">
         My journey started with learning C# and Unity. I have been always
