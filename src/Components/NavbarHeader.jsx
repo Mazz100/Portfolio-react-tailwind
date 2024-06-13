@@ -3,9 +3,12 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 const NavbarHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="flex items-center justify-between bg-secondary-color p-2">
-      <p className="mx-4 text-2xl text-states-color">Mazen Hassan</p>
+      <p className="mx-4 text-2xl uppercase text-states-color">
+        Mazen <span className="text-text-color">Hassan</span>
+      </p>
 
       <nav className="mx-4 hidden p-2 desktop:flex desktop:items-center desktop:gap-10">
         <a
@@ -40,7 +43,10 @@ const NavbarHeader = () => {
           setIsOpen(!isOpen ? true : false);
         }}
       >
-        <DropdownMenu.Trigger className="desktop:hidden">
+        <DropdownMenu.Trigger
+          className="desktop:hidden"
+          aria-label="Dropdown Menu Button"
+        >
           <svg
             className="relative h-10 w-10"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +60,7 @@ const NavbarHeader = () => {
             strokeLinejoin="round"
           >
             <line
-              className="duration-250 origin-center transform opacity-70 transition-[opacity,transform] ease-in will-change-transform"
+              className="duration-250 origin-center transform opacity-70 transition-[opacity,transform] ease-in will-change-transform motion-reduce:transition-none"
               style={
                 isOpen
                   ? { translate: "300px", opacity: "0" }
@@ -66,7 +72,7 @@ const NavbarHeader = () => {
               y2="12"
             />
             <line
-              className="origin-left transform transition-[opacity,transform] duration-150 ease-out will-change-transform"
+              className="origin-left transform transition-[opacity,transform] duration-150 ease-out will-change-transform motion-reduce:transition-none"
               style={
                 isOpen
                   ? { transform: "translate(50%, 50%) rotate(-45deg)" }
@@ -78,7 +84,7 @@ const NavbarHeader = () => {
               y2="6"
             />
             <line
-              className="origin-left transform transition-[opacity,transform] duration-200 ease-in will-change-transform"
+              className="origin-left transform transition-[opacity,transform] duration-200 ease-in will-change-transform motion-reduce:transition-none"
               style={
                 isOpen
                   ? { transform: "translate(50%, -55%) rotate(45deg)" }
@@ -96,7 +102,7 @@ const NavbarHeader = () => {
             sideOffset={5}
             sticky="always"
             loop={true}
-            className="flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-4xl text-text-color transition-opacity data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn landscape:flex-row landscape:justify-between landscape:text-lg"
+            className="motion-reduce:data-[state=open]:animate-animationReduce motion-reduce:data-[state=closed]:animate-animationReduce flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-4xl text-text-color data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn landscape:flex-row landscape:justify-between landscape:text-lg"
           >
             <DropdownMenu.Item
               className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"

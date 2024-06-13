@@ -78,10 +78,10 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.name}
-            className="mb-10 flex flex-col items-center overflow-hidden rounded-lg bg-secondary-color desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 desktop:gap-8"
+            className="group mb-10 flex flex-col items-center overflow-hidden rounded-lg bg-secondary-color desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 desktop:gap-8"
           >
             <img
-              className="h-full object-cover"
+              className="h-full object-cover transition-transform duration-200 group-hover:scale-105 motion-reduce:group-hover:scale-100"
               src={project.screenshot}
               alt={`${project.name} screenshot`}
             />
@@ -149,7 +149,7 @@ const Projects = () => {
         ))}
 
         <a
-          href="#"
+          href="https://github.com/Mazz100"
           className="col-span-2 place-self-center rounded-md p-3 underline underline-offset-8 transition-colors hover:text-states-color"
         >
           More on GitHub

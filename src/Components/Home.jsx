@@ -17,7 +17,7 @@ const Home = () => {
 
       <ul className="flex items-center gap-4 p-2">
         <li>
-          <a href="https://github.com/Mazz100">
+          <a href="https://github.com/Mazz100" aria-label="GitHub icon">
             <svg
               className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
               aria-hidden="true"
@@ -37,7 +37,10 @@ const Home = () => {
         </li>
 
         <li>
-          <a href="https://www.linkedin.com/in/mazen-hassan-3429a7225/">
+          <a
+            href="https://www.linkedin.com/in/mazen-hassan-3429a7225/"
+            aria-label="Linkedin icon"
+          >
             <svg
               className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
               ariahidden="true"
@@ -57,7 +60,10 @@ const Home = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.frontendmentor.io/profile/Mazz100">
+          <a
+            href="https://www.frontendmentor.io/profile/Mazz100"
+            aria-label="frontendmentor icon"
+          >
             <svg
               className="h-6 w-6"
               width="25"
@@ -86,13 +92,13 @@ const Home = () => {
 
       <div className="inline-flex items-center gap-4">
         <a
-          href="https://www.dropbox.com/scl/fi/czw4zjvsq1ix8evdx4a2x/Mazen-Hassan-Resume.pdf?rlkey=nbwnvn9v97h8ulwlpgv9hhw4v&st=ret4r66j&dl=0"
-          className="my-6 self-start rounded-md bg-interactive-states-bg p-2 px-4 transition-colors hover:bg-interactive-hover"
+          href="https://www.dropbox.com/scl/fi/8kcv7xd71i2uoreab9owc/Mazen-Hassan-Resume.pdf?rlkey=u6zl9nb1py74r9yt6uwbcjuwq&st=upa1cm2e&dl=0"
+          className="my-6 self-start rounded-md bg-interactive-states-bg p-2 px-4 text-[#000] transition-colors hover:bg-interactive-hover hover:text-text-color"
         >
           Get Resume
         </a>
         <a
-          href="#"
+          href="#Projects"
           className="my-6 self-start rounded-md border-[1px] border-states-color p-2 px-4 transition-colors hover:border-interactive-hover"
         >
           See Projects

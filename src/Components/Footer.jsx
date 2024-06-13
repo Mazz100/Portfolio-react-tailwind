@@ -49,7 +49,7 @@ const Footer = () => {
           <p className="mb-4">Network</p>
           <ul className="flex gap-4">
             <li>
-              <a href="https://github.com/Mazz100">
+              <a href="https://github.com/Mazz100" aria-label="GitHub icon">
                 <svg
                   className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
                   aria-hidden="true"
@@ -69,7 +69,10 @@ const Footer = () => {
             </li>
 
             <li>
-              <a href="https://www.linkedin.com/in/mazen-hassan-3429a7225/">
+              <a
+                href="https://www.linkedin.com/in/mazen-hassan-3429a7225/"
+                aria-label="Linkedin icon"
+              >
                 <svg
                   className="h-6 w-6 rounded-full transition-colors hover:fill-states-color"
                   ariahidden="true"
@@ -89,7 +92,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.frontendmentor.io/profile/Mazz100">
+              <a
+                href="https://www.frontendmentor.io/profile/Mazz100"
+                aria-label="frontendmentor icon"
+              >
                 <svg
                   className="h-6 w-6"
                   width="25"

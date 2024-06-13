@@ -29,6 +29,8 @@ export default {
       animation: {
         fadeIn: "fadeIn 0.2s linear",
         fadeOut: "fadeOut 0.2s linear",
+        animationReduce:
+          "animationReduce 0.0s linear" /*Reduced motion (No Animation)*/,
       },
 
       keyframes: {
@@ -51,6 +53,17 @@ export default {
           "100%": {
             opacity: "0",
             transform: "translateY(-10px)",
+          },
+        },
+
+        animationReduce: {
+          "0%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
           },
         },
       },

@@ -59,7 +59,7 @@ const Skills = () => {
         {skills.map((skill) => (
           <li
             key={skill.name}
-            className="flex h-full w-full flex-col items-center rounded-md bg-secondary-color p-10 text-center"
+            className="flex h-full w-full flex-col items-center rounded-md bg-secondary-color p-10 text-center transition-transform hover:scale-105 motion-reduce:hover:scale-100"
           >
             <img
               className="h-full w-full"
