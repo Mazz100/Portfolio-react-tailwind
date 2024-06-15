@@ -31,6 +31,7 @@ export default {
         fadeOut: "fadeOut 0.2s linear",
         animationReduce:
           "animationReduce 0.0s linear" /*Reduced motion (No Animation)*/,
+        borderAnim: "borderAnim 3s ease-out infinit",
       },
 
       keyframes: {
@@ -64,6 +65,18 @@ export default {
           "100%": {
             opacity: "1",
             transform: "translateY(0)",
+          },
+        },
+
+        borderAnim: {
+          "0%": {
+            borderTop: "2px",
+            borderColor: "rgb(247, 140, 26)",
+          },
+
+          "100%": {
+            borderLeft: "2px;",
+            borderColor: "rgba(247, 140, 26, 0)",
           },
         },
       },

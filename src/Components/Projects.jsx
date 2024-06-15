@@ -1,4 +1,5 @@
 import React from "react";
+import * as Separator from "@radix-ui/react-separator";
 import crowdFundImage from "../assets/crowdfunding-product-page.png";
 import tipCalculatorImage from "../assets/tip-calculator-app.png";
 import restApiCountriesImage from "../assets/Restful-API-countries.png";
@@ -72,7 +73,7 @@ const Projects = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center p-12">
-        <h2 className="mb-10 text-center text-4xl" id="Projects">
+        <h2 className="mb-10 text-center text-5xl" id="Projects">
           Projects
         </h2>
         {projects.map((project) => (
@@ -81,7 +82,7 @@ const Projects = () => {
             className="group mb-10 flex flex-col items-center overflow-hidden rounded-lg bg-secondary-color desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 desktop:gap-8"
           >
             <img
-              className="h-full object-cover transition-transform duration-200 group-hover:scale-105 motion-reduce:group-hover:scale-100"
+              className="h-full object-cover transition-transform duration-200 motion-reduce:group-hover:scale-100 desktop:group-hover:scale-105"
               src={project.screenshot}
               alt={`${project.name} screenshot`}
             />
@@ -97,6 +98,11 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
+
+              <Separator.Root
+                className="mt-4 bg-body-bg-color data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full"
+                orientation="horizontal"
+              />
 
               <a
                 href={project.url}

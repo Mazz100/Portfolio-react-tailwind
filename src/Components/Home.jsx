@@ -6,9 +6,9 @@ const Home = () => {
     <div className="flex flex-col p-12" id="Home">
       <h1 className="my-1 text-4xl">Hello, I'm</h1>
 
-      <span className="text-7xl font-bold">Mazen</span>
+      <span className="text-7xl font-bold text-states-color">Mazen</span>
 
-      <p className="my-1 text-lg opacity-60"> a frontend web developer</p>
+      <p className="my-1 text-xl opacity-70"> a frontend web developer</p>
 
       <Seperator.Root
         className="my-4 bg-secondary-color data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full"

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NavbarHeader from "./Components/NavbarHeader";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -9,7 +9,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <div className="font-Inter-font-family flex min-h-screen flex-col items-center bg-body-bg-color text-text-color">
+      <div className="flex min-h-screen flex-col items-center bg-body-bg-color font-Inter-font-family text-text-color">
         <header className="sticky top-0 z-10 w-full">
           <NavbarHeader />
         </header>

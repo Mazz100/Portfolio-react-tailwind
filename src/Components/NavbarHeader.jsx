@@ -54,17 +54,17 @@ const NavbarHeader = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#14213D"
+            stroke="#fff"
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
           >
             <line
-              className="duration-250 origin-center transform opacity-70 transition-[opacity,transform] ease-in will-change-transform motion-reduce:transition-none"
+              className="origin-center transform transition-[opacity,transform] duration-150 ease-in will-change-transform motion-reduce:transition-none"
               style={
                 isOpen
-                  ? { translate: "300px", opacity: "0" }
-                  : { translate: "0", opacity: "0.7" }
+                  ? { transform: "translateX(100px)", opacity: "0" }
+                  : { transform: "translateX(0)", opacity: "1" }
               }
               x1="3"
               y1="12"
@@ -102,7 +102,7 @@ const NavbarHeader = () => {
             sideOffset={5}
             sticky="always"
             loop={true}
-            className="motion-reduce:data-[state=open]:animate-animationReduce motion-reduce:data-[state=closed]:animate-animationReduce flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-4xl text-text-color data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn landscape:flex-row landscape:justify-between landscape:text-lg"
+            className="flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-4xl text-text-color data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn motion-reduce:data-[state=closed]:animate-animationReduce motion-reduce:data-[state=open]:animate-animationReduce landscape:flex-row landscape:justify-between landscape:text-lg"
           >
             <DropdownMenu.Item
               className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"
