@@ -3,7 +3,7 @@ import * as Seperator from "@radix-ui/react-separator";
 
 const Home = () => {
   return (
-    <div className="flex flex-col p-12" id="Home">
+    <div className="flex w-full flex-col p-12" id="Home">
       <h1 className="my-1 text-4xl">Hello, I'm</h1>
 
       <span className="text-7xl font-bold text-states-color">Mazen</span>
@@ -93,13 +93,13 @@ const Home = () => {
       <div className="inline-flex items-center gap-4">
         <a
           href="https://www.dropbox.com/scl/fi/8kcv7xd71i2uoreab9owc/Mazen-Hassan-Resume.pdf?rlkey=u6zl9nb1py74r9yt6uwbcjuwq&st=upa1cm2e&dl=0"
-          className="my-6 self-start rounded-md bg-interactive-states-bg p-2 px-4 text-[#000] transition-colors hover:bg-interactive-hover hover:text-text-color"
+          className="my-6 rounded-md bg-interactive-states-bg p-2 px-4 text-[#000] transition-colors hover:bg-interactive-hover hover:text-text-color"
         >
           Get Resume
         </a>
         <a
           href="#Projects"
-          className="my-6 self-start rounded-md border-[1px] border-states-color p-2 px-4 transition-colors hover:border-interactive-hover"
+          className="my-6 rounded-md border-[1px] border-states-color p-2 px-4 transition-colors hover:border-interactive-hover"
         >
           See Projects
         </a>

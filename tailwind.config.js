@@ -27,18 +27,17 @@ export default {
 
     extend: {
       animation: {
-        fadeIn: "fadeIn 0.2s linear",
-        fadeOut: "fadeOut 0.2s linear",
+        fadeIn: "fadeIn 0.25s ease-in-out",
+        fadeOut: "fadeOut 0.5s ease-out",
         animationReduce:
           "animationReduce 0.0s linear" /*Reduced motion (No Animation)*/,
-        borderAnim: "borderAnim 3s ease-out infinit",
       },
 
       keyframes: {
         fadeIn: {
           "0%": {
-            opacity: "0.7",
-            transform: "translateY(-10px)",
+            opacity: "1",
+            transform: "translateY(-400px)",
           },
           "100%": {
             opacity: "1",
@@ -52,8 +51,8 @@ export default {
             transform: "translateY(0)",
           },
           "100%": {
-            opacity: "0",
-            transform: "translateY(-10px)",
+            opacity: "1",
+            transform: "translateY(-400px)",
           },
         },
 
@@ -65,18 +64,6 @@ export default {
           "100%": {
             opacity: "1",
             transform: "translateY(0)",
-          },
-        },
-
-        borderAnim: {
-          "0%": {
-            borderTop: "2px",
-            borderColor: "rgb(247, 140, 26)",
-          },
-
-          "100%": {
-            borderLeft: "2px;",
-            borderColor: "rgba(247, 140, 26, 0)",
           },
         },
       },

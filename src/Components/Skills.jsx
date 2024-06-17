@@ -59,10 +59,10 @@ const Skills = ({ skillRef }) => {
         {skills.map((skill) => (
           <li
             key={skill.name}
-            className="flex h-full w-full flex-col items-center rounded-md bg-secondary-color p-10 text-center transition-transform motion-reduce:hover:scale-100 desktop:hover:scale-105"
+            className="group flex h-full w-full flex-col items-center overflow-hidden rounded-md bg-secondary-color p-10 text-center transition-transform motion-reduce:hover:scale-100 desktop:hover:scale-105"
           >
             <img
-              className="h-full w-full"
+              className="h-full w-full transition-transform duration-[250ms] ease-out desktop:-translate-y-32 desktop:group-hover:translate-y-0"
               src={skill.icon}
               alt={`${skill.name} icon`}
             />

@@ -82,7 +82,7 @@ const Projects = () => {
             className="group mb-10 flex flex-col items-center overflow-hidden rounded-lg bg-secondary-color desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 desktop:gap-8"
           >
             <img
-              className="h-full object-cover transition-transform duration-200 motion-reduce:group-hover:scale-100 desktop:group-hover:scale-105"
+              className="h-full object-cover transition-transform duration-300 ease-out motion-reduce:group-hover:scale-100 desktop:-translate-x-40 desktop:-translate-y-3/4 desktop:-rotate-45 desktop:group-hover:translate-x-0 desktop:group-hover:translate-y-0 desktop:group-hover:rotate-0"
               src={project.screenshot}
               alt={`${project.name} screenshot`}
             />
@@ -123,7 +123,7 @@ const Projects = () => {
                     stroke="#fff"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth="1.5"
                   />
                 </svg>
               </a>
@@ -146,7 +146,7 @@ const Projects = () => {
                     stroke="#fff"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth="1.5"
                   />
                 </svg>
               </a>

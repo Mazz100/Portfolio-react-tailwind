@@ -102,7 +102,7 @@ const NavbarHeader = () => {
             sideOffset={5}
             sticky="always"
             loop={true}
-            className="flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-4xl text-text-color data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn motion-reduce:data-[state=closed]:animate-animationReduce motion-reduce:data-[state=open]:animate-animationReduce landscape:flex-row landscape:justify-between landscape:text-lg"
+            className="flex w-[--radix-dropdown-menu-content-available-width] origin-[--radix-dropdown-menu-content-transform-origin] flex-col items-center bg-secondary-color p-2 text-2xl text-text-color data-[state=closed]:animate-fadeOut data-[state=open]:animate-fadeIn motion-reduce:data-[state=closed]:animate-animationReduce motion-reduce:data-[state=open]:animate-animationReduce landscape:flex-row landscape:justify-around"
           >
             <DropdownMenu.Item
               className="mb-4 rounded-md p-4 transition-colors hover:bg-body-bg-color focus-visible:bg-body-bg-color"
